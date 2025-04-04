@@ -13,6 +13,14 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-kafka-realtime-wikimedia</name>
 	<description>Demo project for Spring Boot Kafka</description>
+	<modules>
+		<module>kafka-prod-wikimedia</module>
+		<module>kafka-consumer-database</module>
+	</modules>
+	<!--
+	add it as a parent - making it as a multi-modular project
+	-->
+	<packaging>pom</packaging>
 	<url/>
 	<licenses>
 		<license/>
@@ -47,11 +55,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
